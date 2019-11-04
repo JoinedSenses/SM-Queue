@@ -52,7 +52,6 @@ methodmap Queue < Handle {
 	// @param size          If not set, the number of elements copied from the array
 	//                      will be equal to the blocksize.  If set higher than the
 	//                      blocksize, the operation will be truncated.
-	// @return              Index of the new entry.
 	public void PushArray(const any[] values, int size = -1) {
 		PushArrayArray(this, values, size);
 	}
