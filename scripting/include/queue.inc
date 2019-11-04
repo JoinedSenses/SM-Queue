@@ -97,7 +97,7 @@ methodmap Queue < Handle {
 		public get() { return GetArraySize(this) > 0; }
 	}
 
-	// Returns the blocksize the array was created with.
+	// Returns the blocksize the queue was created with.
 	property int BlockSize {
 		public get() { return GetArrayBlockSize(this); }
 	}
