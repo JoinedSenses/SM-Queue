@@ -92,7 +92,7 @@ methodmap Queue < Handle {
 		return cellCount;
 	}
 
-	// Returns true if the stack is empty, false otherwise.
+	// Returns true if the queue is empty, false otherwise.
 	property bool Empty {
 		public get() { return GetArraySize(this) > 0; }
 	}
