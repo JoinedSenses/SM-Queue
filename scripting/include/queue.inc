@@ -1,3 +1,8 @@
+#if defined _queue_included
+ #endinput
+#endif
+#define _queue_included
+
 #include <adt_array>
 
 methodmap Queue < Handle {
