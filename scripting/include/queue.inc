@@ -9,8 +9,6 @@ methodmap Queue < Handle {
 	// Creates A FIFO Queue based on the behaviors of ArrayList and ArrayStack.
 	// @param blocksize     The number of cells each member of the queue can
 	//                      hold.
-	// @param startsize     Initial size of the queue. Note that data will
-	//                      NOT be auto-initialized.
 	// @return              New Handle to Queue object.
 	public Queue(int blocksize = 1) {
 		return view_as<Queue>(CreateArray(blocksize));
