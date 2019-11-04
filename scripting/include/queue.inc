@@ -15,7 +15,7 @@ methodmap Queue < Handle {
 	}
 
 	// Clones a queue, returning a new handle with the same size and data.
-	// This should NOT be confused with CLoneHandle. This is a completely new
+	// This should NOT be confused with CloneHandle. This is a completely new
 	// handle with the same data but no relation to the original. It should
 	// be closed when no longer needed.
 	//
