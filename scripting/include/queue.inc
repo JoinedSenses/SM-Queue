@@ -94,7 +94,12 @@ methodmap Queue < Handle {
 
 	// Returns true if the queue is empty, false otherwise.
 	property bool Empty {
-		public get() { return GetArraySize(this) > 0; }
+		public get() { return !GetArraySize(this); }
+	}
+
+	// Returns length of the queue
+	property int Length {
+		public get() { return GetArraySize(this); }
 	}
 
 	// Returns the blocksize the queue was created with.
