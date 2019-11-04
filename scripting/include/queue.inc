@@ -6,7 +6,7 @@
 #include <adt_array>
 
 methodmap Queue < Handle {
-	// Creates A FIFO Queue based on the behavior of an ArrayList.
+	// Creates A FIFO Queue based on the behaviors of an ArrayList and ArrayStack.
 	// @param blocksize     The number of cells each member of the queue can
 	//                      hold.
 	// @param startsize     Initial size of the queue. Note that data will
