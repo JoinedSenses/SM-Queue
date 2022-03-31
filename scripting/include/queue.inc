@@ -98,11 +98,10 @@ methodmap Queue < Handle {
 
 	// Retrieves a cell value from the head of the queue
 	//
-	// @return               Value read.
-	// @error                Invalid index (0).
-	public any Front() {
-		any value = GetArrayCell(this, 0);
-		return value;
+	// @return              Value read.
+	// @error               Invalid index (0).
+	public any Peek() {
+		return GetArrayCell(this, 0);;
 	}
 
 	// Retrieves a string value from the head of the queue
@@ -111,9 +110,8 @@ methodmap Queue < Handle {
 	// @param maxlength     Maximum size of the buffer.
 	// @return              Number of characters copied.
 	// @error               Invalid index (0).
-	public int FrontString(char[] buffer, int maxlength) {
-		int charCount = GetArrayString(this, 0, buffer, maxlength);
-		return charCount;
+	public int PeekString(char[] buffer, int maxlength) {
+		return GetArrayString(this, 0, buffer, maxlength);
 	}
 
 	// Retrieves an array value from the head of the queue
@@ -123,9 +121,8 @@ methodmap Queue < Handle {
 	//                      blocksize.  Otherwise, the size passed is used.
 	// @return              Number of cells copied.
 	// @error               Invalid index.
-	public int FrontArray(any[] buffer, int size = -1) {
-		int cellCount = GetArrayArray(this, 0, buffer, size);
-		return cellCount;
+	public int PeekArray(any[] buffer, int size = -1) {
+		return GetArrayArray(this, 0, buffer, size);
 	}
 
 	// Returns true if the queue is empty, false otherwise.
