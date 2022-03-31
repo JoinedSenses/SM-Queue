@@ -101,7 +101,7 @@ methodmap Queue < Handle {
 	// @return              Value read.
 	// @error               Invalid index (0).
 	public any Peek() {
-		return GetArrayCell(this, 0);;
+		return GetArrayCell(this, 0);
 	}
 
 	// Retrieves a string value from the head of the queue
