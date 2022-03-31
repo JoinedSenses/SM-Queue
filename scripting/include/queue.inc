@@ -89,7 +89,7 @@ methodmap Queue < Handle {
 	// @param size          If not set, assumes the buffer size is equal to the
 	//                      blocksize.  Otherwise, the size passed is used.
 	// @return              Number of cells copied.
-	// @error               Invalid index.
+	// @error               Invalid index (0).
 	public int PopArray(any[] buffer, int size = -1) {
 		int cellCount = GetArrayArray(this, 0, buffer, size);
 		RemoveFromArray(this, 0);
@@ -120,7 +120,7 @@ methodmap Queue < Handle {
 	// @param size          If not set, assumes the buffer size is equal to the
 	//                      blocksize.  Otherwise, the size passed is used.
 	// @return              Number of cells copied.
-	// @error               Invalid index.
+	// @error               Invalid index (0).
 	public int PeekArray(any[] buffer, int size = -1) {
 		return GetArrayArray(this, 0, buffer, size);
 	}
